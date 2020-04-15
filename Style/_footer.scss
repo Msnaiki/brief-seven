@@ -1,0 +1,32 @@
+.divsfooter {
+  background-color: #000;
+  text-align: center;
+    width: 100%;
+    
+   z-index: 0;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    div {
+        width: 30%;
+        height: 100%;
+        
+      }  
+  }
+
+  
+  .chfooter {
+    display: flex;
+    background-color: #181717;
+    color: rgb(87, 207, 207);
+    justify-content: flex-start;
+    font-size: 16px;
+    z-index: 0;
+    padding: 8px;
+   
+    
+  }
+ 
+  
+  
+  

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="../Style/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <style>
+        .container1st{
+            background-image: url('../Images/red.jpg');
+           
+        }
+    </style>
+</head>
+<body >
+    <div class="conhed">
+        <header class="main-header">
+            <div class="logo">
+                <a href="#"><img src="../Images/logo-exoo.gif" alt="logo-exo" id='logo-exo'></a>
+            </div>
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon">
+                <span class="menu-icon__line"></span>
+            </label>
+            <ul class="nav-links">
+                <li class="nav-link">
+                  <a href="../index.html">HOME</a>  
+                </li>
+                <li class="nav-link">
+                 <a href="">RESERVER</a>
+                </li>
+                <li class="nav-link">
+                    <a href="">CONTACT</a>
+                </li>
+              
+            </ul> 
+               
+        </header>
+    </div>
+    
+    <div class="container1st"  style="background-image: url('../Images/Red.jpg');">
+        <div class="contain-title">
+            <h1 >Pick Your Gear</h1>
+        </div>
+        <div class="botona">
+            <a href="#" class="in">sign in</a>
+            <a href="../register.html" class="up">sign up</a>
+        </div>
+    </div>
+    <div class="border-gradient"></div>
+
+    <div class="space"></div>
+
+    <div class="aboutcontainer">
+        <div class="contained"><div class="taggin">
+            <h1 class="about">OUR PRODUCTS</h1>
+            <div class="hole"></div>
+        </div>
+    </div>
+    </div>
+
+    <div class="space"></div>
+    
+    <div class="main-reserve">
+        <div class="solo-column">
+            <div class="title-reserve"><h2>METHOD.2</h2></div>
+            <div class="solo-image"><img src="../Images/reserve1.jpg" alt="1st product"></div>
+            <div class="cont-btn">
+                <div class="btna" onclick="method2()"><a href="#method2">reserve</a></div>
+                <div class="btna"><a href="https://www.youtube.com/watch?v=f4LYGil7kOo">see video</a></div>
+            </div>
+            
+
+        </div>
+        <div class="solo-column">
+            <div class="title-reserve"><h2>FLY.45</h2></div>
+            <div class="solo-image"><img src="../Images/slide 3.jpg" alt="2nd product"></div>
+            <div class="cont-btn">
+                <div class="btna" onclick="flye45()"><a href="#fly45">reserve</a></div>
+            <div class="btna"><a href="https://www.youtube.com/watch?v=NCWqm_is95s">see video</a></div>
+            </div>
+
+        </div>
+        <div class="solo-column">
+            <div class="title-reserve"><h2>HYUNDAI</h2></div>
+            <div class="solo-image"><img src="../Images/slide7.jpg" alt="3product"></div>
+            <div class="cont-btn">
+                <div class="btna" onclick="hyundai()"><a href="#hyundai">reserve</a></div>
+                <div class="btna"><a href="https://www.youtube.com/watch?v=lvNqfZ5wK9U">see video</a></div>
+            </div>
+        </div>
+        
+    </div>
+    
+
+    <div class="space"></div>
+    <div class="border-gradient"></div>
+    <div class="space"></div>
+
+    <div id="fullcontainer">
+        <div class="leftsidio">
+            <div id="method2">
+                <div><img src="../Images/reserve1.jpg" alt=""></div>
+                <div class="space"></div>
+                <div><h1>Method.2</h1></div>
+                <div class="space"></div>
+                <div><p>price: 10000$/3days</p></div>
+                <div class="space"></div>
+            </div>
+            <div id="fly45">
+                <div><img src="../img/slide 3.jpg" alt=""></div>
+                <div class="space"></div>
+                <div><h1>fly45</h1></div>
+                <div class="space"></div>
+                <div><p>price: 1000$/3days</p></div>
+                <div class="space"></div>
+            </div>
+            <div id="hyundai">
+                    <div><img src="../img/slide7.jpg" alt=""></div>
+                    <div class="space"></div>
+                    <div><h1>fly45</h1></div>
+                    <div class="space"></div>
+                    <div><p>price: 500$/3days</p></div>
+                    <div class="space"></div>
+
+            </div>
+        </div>
+        <div class="rightsidio">
+            <form class="box">
+                <div><input type="text" name="name" placeholder="Name" id="name" ></div>
+                <div><input type="text" name="name" placeholder="Last Name" id="last" ></div> 
+                <div><input type="text" name="name" placeholder="IdNumber" id="idnumb" ></div>
+                <div><input type="text" name="name" placeholder="number of days" id="days" ></div>
+                <input type="submit" name="" value="reserver"  onclick="validation()" >
+                
+             </form>
+        </div>
+        
+    </div>
+
+    <div class="space"></div>
+    <div class="border-gradient" id="bor"></div>
+    <div class="space"></div>
+
+    <div class="samta">
+        <div class="margin_space"><h1>Subscribe To Newsletter</h1></div>
+        
+        <div class="margin_space"><input type="text" name="tellus" placeholder="  Write Your Email"></div>
+        <div>
+            <div class="btn">
+
+                <div class="t1"><p>SUBMIT</p> </div>
+           
+            </div>
+        </div>
+        
+    </div>
+    
+    <div class="space"></div>
+    
+    <footer id="f1">
+        <div class="divsfooter">
+            <div id="dfooter1"> <h1> <img src="../img/logo-exoo.gif" alt="logo2" width="20%">  </h1> 
+            <p> EXO-GEAR </p>
+                <span>
+                    <i class="fab fa-instagram" style="margin-top: 10px;"></i>
+                </span>
+                <span>
+                    <i class="fab fa-twitter" style="margin-top: 10px;"></i>
+                </span>
+                <span>
+                    <i class="fab fa-linkedin-in" style="margin-top: 10px;"></i>
+                </span>
+        </div>
+  
+            
+            <div id="dfooter4">
+            <h1> CONTACT US</h1>
+            <p> Feel free to get in touch with us via phone or send
+                us a message </p>
+        
+            <p>+1 800 123 1234</p> <p>email@website.com</p>
+            </div>
+        </div>
+        <div class="space"></div>
+        <div id="childfooter" class="chfooter">
+            
+            <div >
+                <p> @Copyright 2019. All Right Reserved</p>
+            </div>
+                   
+               
+            
+        </div>
+        </footer>    
+    
+    
+    <script src="../Images/reserve.js"></script>
+</body >
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "x",
+  "version": "1.0.0",
+  "description": "",
+  "main": "servercode.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^4.0.3",
+    "express-json-file-crud": "0.0.5",
+    "handlebars": "^4.7.6"
+  }
+}

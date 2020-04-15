@@ -1,0 +1,82 @@
+
+// Carousel configuration parameters
+$n: 8;
+$item-width: 30vw;
+$item-separation: 0;
+$viewer-distance: 60vw;
+
+// Derived variables
+$theta: 2 * 3.141592653589793 / $n; 
+$apothem: 80vw;
+
+.carousel {
+	margin: 10px;
+	perspective: $viewer-distance;
+	overflow: hidden;
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	> * {
+		flex: 0 0 auto;
+	}
+	
+	figure {
+		margin: 0;
+		
+		width: $item-width;
+		transform-style: preserve-3d;
+		transition: transform 0.5s;
+		transform-origin: 50% 50% (-$apothem);
+		
+		img {
+      		box-shadow: 0 2vh 2vh 0 rgba(194, 255, 255, 0.432);
+			width: 100%;
+			box-sizing: border-box;
+			padding: 0 $item-separation / 2;
+			height: 100%;
+			opacity: 0.9;
+			
+			&:not(:first-of-type) {
+				position: absolute;
+				left: 0;
+				top: 0;
+				transform-origin: 50% 50% (-$apothem);
+			}
+			
+			@for $i from 2 through $n {
+				&:nth-child(#{$i}) {
+					transform: rotateY(#{($i - 1) * $theta}rad);
+				}
+			}
+		}
+	}
+	
+	nav {
+		display: flex;
+		justify-content: center;
+		margin: 20px 0 0;
+		
+		button {
+			flex: 0 0 auto;
+			margin: 0 5px;
+			width: 20vw;
+			transition: .4s ease-out;
+			cursor: pointer;
+			
+			color: #5AFFFF;
+			background: none;
+			border: 1px solid;
+			letter-spacing: 1px;
+			padding: 5px 10px;
+			&:hover{
+				background-color: #E93359;
+			}
+		}
+	}
+	
+}
+
+
+
+

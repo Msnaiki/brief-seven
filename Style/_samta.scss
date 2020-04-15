@@ -1,0 +1,49 @@
+.samta{
+    background-color: #000;
+    background-image: url("../Images/poly.gif");
+    text-align: center;
+   
+   
+    height: auto;
+    padding: 2vw;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    .btn{
+        background:none;
+        display: flex;
+        color: #5AFFFF;
+		background: none;
+		border: 1px solid;
+        padding: 1vw;
+        transition: .4s ease-out;
+        cursor: pointer;
+        &:hover{
+            background-color: #E93359;
+            }
+            .t1{
+                margin-left: 1vw;
+                p{
+                    margin: 0;  
+                  }
+              }
+      
+      }
+      
+      
+     
+      .margin_space{
+          display: flex;
+          justify-content: center;
+          margin-bottom: 2vh;
+          width: 100%;
+        input {
+            width: 360px;
+            height: 25px;
+          }
+      }
+  }
+ 
+  
